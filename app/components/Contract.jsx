@@ -155,6 +155,7 @@ function Contract() {
               ].map((item, index) => (
                 <motion.a
                   href={item.link}
+                  target="_blank"
                   key={index}
                   className="flex flex-col md:flex-row items-center w-full p-4 border-2 gap-4 cursor-pointer"
                   initial={{ opacity: 0, x: 100 }}
