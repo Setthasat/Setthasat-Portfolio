@@ -69,7 +69,7 @@ function Projects() {
         PROJECTS
       </h1>
 
-      <div className="hidden md:flex flex-col gap-6 w-full bg-white">
+      <div className="hidden md:flex flex-col gap-6 w-full ">
         <div className="flex gap-6 w-full">
           {projects.slice(0, 2).map((project, index) => (
             <ProjectCard
