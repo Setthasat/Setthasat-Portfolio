@@ -45,7 +45,7 @@ function Contract() {
       className="w-screen flex flex-col items-center px-4 md:px-24 py-12 border-b-[3px] gap-6"
       id="contract"
     >
-      <h2 className="text-4xl font-bold w-full text-center p-3">Contract</h2>
+      <h2 className="text-4xl font-bold w-full text-center p-3 border-[3px]">Contract</h2>
 
       <div className="w-full flex flex-col lg:flex-row gap-6">
         <motion.div
