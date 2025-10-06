@@ -17,6 +17,7 @@ function Navbar() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
             href="#about"
+            className="hover:text-3xl duration-150"
           >
             About
           </motion.a>
@@ -26,6 +27,7 @@ function Navbar() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
             href="#projects"
+            className="hover:text-3xl duration-150"
           >
             Projects
           </motion.a>
@@ -35,6 +37,7 @@ function Navbar() {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
             href="#skills"
+            className="hover:text-3xl duration-150"
           >
             Skills
           </motion.a>
@@ -44,13 +47,17 @@ function Navbar() {
             transition={{ duration: 0.6, delay: 1.0 }}
             viewport={{ once: true }}
             href="#contract"
+            className="hover:text-3xl duration-150"
           >
             Contract
           </motion.a>
         </div>
 
         {/* Logo / Right Section */}
-        <a href="#hero" className="flex justify-center items-center gap-2 text-2xl font-bold">
+        <a
+          href="#hero"
+          className="flex justify-center items-center gap-2 text-2xl font-bold"
+        >
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
