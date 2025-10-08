@@ -95,7 +95,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 w-full md:hidden bg-white">
+      <div className="flex flex-col gap-6 w-full md:hidden bg">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
@@ -195,7 +195,7 @@ function Projects() {
 function ProjectCard({ project, index, onLearnMore, large = false, isMobile = false }) {
   return (
     <motion.div
-      className={`border-[2px] shadow-md flex flex-col ${
+      className={`border-[2px] shadow-md flex flex-col bg-white ${
         isMobile ? "w-full" : large ? "w-[58%]" : "w-[42%]"
       }`}
       initial={{ opacity: 0, y: 30 }}

@@ -42,20 +42,20 @@ function Contract() {
 
   return (
     <section
-      className="w-screen flex flex-col items-center px-4 md:px-24 py-12 border-b-[3px] gap-6"
+      className="w-screen flex flex-col items-center px-4 md:px-24 py-12 border-b-[3px] gap-6 bg-gray-100"
       id="contract"
     >
-      <h2 className="text-4xl font-bold w-full text-center p-3 border-[3px]">Contract</h2>
+      <h2 className="text-4xl font-bold w-full text-center p-3 border-[3px] bg-white">Contract</h2>
 
       <div className="w-full flex flex-col lg:flex-row gap-6">
         <motion.div
-          className="flex-1 flex flex-col items-center justify-center h-full"
+          className="flex-1 flex flex-col items-center justify-center h-full bg-white"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="w-full h-full border-[3px] mt-6 flex flex-col justify-center items-center">
+          <div className="w-full h-full border-[3px] flex flex-col justify-center items-center">
             <div className="w-full flex justify-between items-center border-b-[3px] p-4">
               <div className="flex gap-2">
                 <div className="w-4 h-4 rounded-full border-[2px]" />
@@ -118,13 +118,13 @@ function Contract() {
         </motion.div>
 
         <motion.div
-          className="flex-1 flex items-center justify-center h-full"
+          className="flex-1 flex items-center justify-center h-full bg-white"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="w-full h-full border-[3px] mt-6 flex flex-col justify-center items-center">
+          <div className="w-full h-full border-[3px] flex flex-col justify-center items-center">
             <div className="w-full flex justify-between items-center border-b-[3px] p-4">
               <div className="flex gap-2">
                 <div className="w-4 h-4 rounded-full border-[2px]" />

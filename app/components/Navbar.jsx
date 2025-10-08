@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <nav className="relative border-b-[3px]  flex justify-between items-center w-screen px-6 sm:px-24 bg-gray-100">
-      <div className="h-18 flex justify-between items-center w-full">
+      <div className="h-18 flex justify-between items-center gap-8 w-full">
         {/* Desktop Links */}
         <div className="hidden md:flex justify-center items-center gap-8 text-2xl font-bold">
           <motion.a
@@ -45,6 +45,16 @@ function Navbar() {
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
+            viewport={{ once: true }}
+            href="#certificate"
+            className="hover:text-3xl duration-150"
+          >
+            Certificates
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
             viewport={{ once: true }}
             href="#contract"
             className="hover:text-3xl duration-150"
@@ -93,7 +103,7 @@ function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="absolute top-full left-0 w-full bg-gray-100 md:hidden z-50 flex flex-col gap-6 py-6 px-6 text-xl font-bold border-b-[3px]"
+            className="absolute top-full left-0 w-full bg-gray-100 md:hidden z-50 flex flex-col gap-6 py-6 px-24 text-xl font-bold border-b-[3px]"
           >
             <a href="#about" onClick={() => setOpen(false)}>
               About
@@ -103,6 +113,9 @@ function Navbar() {
             </a>
             <a href="#skills" onClick={() => setOpen(false)}>
               Skills
+            </a>
+            <a href="#certificate" onClick={() => setOpen(false)}>
+              Certificates
             </a>
             <a href="#contact" onClick={() => setOpen(false)}>
               Contact
