@@ -12,7 +12,7 @@ function Certificate() {
       </h1>
 
       {/* container for both cards */}
-      <div className="flex flex-col md:flex-row justify-between items-center w-full gap-16">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8">
         {/* CS50P Card */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
