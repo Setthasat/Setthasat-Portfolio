@@ -29,7 +29,7 @@ function Certificate() {
             </div>
             <p className="text-lg md:text-2xl font-semibold">CS50P</p>
           </div>
-          <img src="./certificate/CS50P.png" className="w-full h-full" />
+          <img src="./certificate/CS50P.png" className="w-full h-full filter grayscale hover:grayscale-0 transition duration-500" />
           <div className="border-t-[2px] w-full flex justify-center items-center px-12 py-6">
             <a
               target="_blank"
@@ -57,7 +57,7 @@ function Certificate() {
             </div>
             <p className="text-lg md:text-2xl font-semibold">CS50W</p>
           </div>
-          <img src="./certificate/CS50W.png" className="w-full h-full" />
+          <img src="./certificate/CS50W.png" className="w-full h-full filter grayscale hover:grayscale-0 transition duration-500" />
           <div className="border-t-[2px] w-full flex justify-center items-center px-12 py-6">
             <a
               href="https://cs50.harvard.edu/web/"
