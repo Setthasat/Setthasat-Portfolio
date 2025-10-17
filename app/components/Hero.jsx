@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section id="hero" className="w-screen min-h-[30rem] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-24 border-b-[3px] overflow-hidden">
+    <section id="hero" className="w-screen min-h-[32rem] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-24 border-b-[3px] overflow-hidden">
       {/* Text */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -13,6 +13,7 @@ function Hero() {
       >
         <p>SETTHASAT</p>
         <p>SIRIKOMONSING</p>
+        <p className="text-4xl sm:text-5xl md:text-6xl animate-type">{"<"}WEB DEVELOPER{">"}</p>
       </motion.div>
 
       {/* Image */}

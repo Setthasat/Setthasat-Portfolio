@@ -32,6 +32,21 @@
   }
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .animate-horizontal-spin {
   animation: horizontal-spin 8s linear infinite;
 }
@@ -44,6 +59,16 @@
   animation: scroll-left 40s linear infinite;
 }
 
-html { 
+.animate-type {
+  margin-inline: auto;
+  white-space: nowrap;
+  padding-right: 3px;
+  border-right: 5px solid;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(20) forwards, blink 1s step-end infinite;
+}
+
+html {
   scroll-behavior: smooth;
 }
